@@ -9,6 +9,7 @@
   system.zenKernel.enable = true;
   system.mango.enable = true;
 
+  system.gpg.enable = true;
   system.sshd.enable = false;
 
   time.timeZone = "Europe/Kyiv";
