@@ -8,15 +8,13 @@
 
   system.zenKernel.enable = true;
   system.audio.enable = true;
+  system.mango.enable = true;
 
   time.timeZone = "Europe/Kyiv";
   i18n.defaultLocale = "uk_UA.UTF-8";
   console = {
     font = "Lat2-Terminus32";
   };
-
-  services.desktopManager.plasma6.enable = true;
-  services.displayManager.plasma-login-manager.enable = true;
 
   services.libinput.enable = true;
   users.users.wwhasmile = {
