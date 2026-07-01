@@ -1,0 +1,22 @@
+{ config, lib, pkgs, ... }:
+
+let
+  cfg = config.system.audio;
+in {
+    options = {
+      system.audio = {
+        enable = lib.mkEnableOption "Enable audio";
+      };
+    };
+
+    config = lib.mkIf cfg.enable {
+      security.rtkit.enable = true;
+      services.pipewire = {
+        enable = true;
+        alsa.enable = true;
+        alsa.support32Bit = true;
+        pulse.enable = true;
+        jack.enable = true;
+      };
+    };
+  }
