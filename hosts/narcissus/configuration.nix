@@ -9,6 +9,7 @@
   system.zenKernel.enable = true;
   system.plasma.enable = true;
 
+  system.firewalld.enable = true;
   system.gpg.enable = true;
   system.sshd.enable = false;
 
