@@ -17,6 +17,15 @@
     boot.loader.systemd-boot.editor = false;
     boot.loader.efi.canTouchEfiVariables = true;
 
+    boot.kernelParams = [
+      "quiet"
+      "splash"
+      "vga=current"
+      "rd.udev.log_level=3"
+      "loglevel=3"
+    ];
+    boot.plymouth.enable = true;
+
     networking.networkmanager.enable = true;
 
     nix.settings.experimental-features = [ "nix-command" "flakes" "pipe-operators" ];
