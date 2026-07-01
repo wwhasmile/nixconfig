@@ -7,7 +7,7 @@
   networking.networkmanager.enable = true;
 
   system.zenKernel.enable = true;
-  system.mango.enable = true;
+  system.plasma.enable = true;
 
   system.gpg.enable = true;
   system.sshd.enable = false;
