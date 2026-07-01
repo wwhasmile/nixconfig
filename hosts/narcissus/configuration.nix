@@ -13,6 +13,8 @@
   system.gpg.enable = true;
   system.sshd.enable = false;
 
+  system.docker.enable = true;
+
   time.timeZone = "Europe/Kyiv";
   i18n.defaultLocale = "uk_UA.UTF-8";
   console = {
