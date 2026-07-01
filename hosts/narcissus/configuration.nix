@@ -9,6 +9,8 @@
   system.zenKernel.enable = true;
   system.mango.enable = true;
 
+  system.sshd.enable = false;
+
   time.timeZone = "Europe/Kyiv";
   i18n.defaultLocale = "uk_UA.UTF-8";
   console = {
@@ -37,8 +39,6 @@
     enable = true;
     enableSSHSupport = true;
   };
-
-  services.openssh.enable = true;
 
   networking.firewall.allowedTCPPorts = [ 22 25565 ];
   networking.firewall.enable = true;
