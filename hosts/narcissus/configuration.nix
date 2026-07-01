@@ -7,7 +7,6 @@
   networking.networkmanager.enable = true;
 
   system.zenKernel.enable = true;
-  system.audio.enable = true;
   system.mango.enable = true;
 
   time.timeZone = "Europe/Kyiv";
