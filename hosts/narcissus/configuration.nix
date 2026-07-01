@@ -1,6 +1,9 @@
 { config, lib, pkgs, ... }:
 
 {
+  system.users = [ "wwhasmile" ];
+  system.admins = [ "wwhasmile" ];
+
   system.region = {
     timezone = "Europe/Kyiv";
     language = "uk_UA.UTF-8";
@@ -20,8 +23,7 @@
 
   services.libinput.enable = true;
   users.users.wwhasmile = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "audio" ];
+    description = "Hasmile";
     packages = with pkgs; [
       librewolf 
       tree

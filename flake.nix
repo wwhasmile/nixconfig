@@ -44,6 +44,15 @@
             (./hosts + "/${host}")
 
             ./system
+
+            inputs.home-manager.nixosModules.home-manager
+            {
+              home-manager.extraSpecialArgs = {
+                inherit pkgs;
+                inherit pkgs-stable;
+                inherit inputs;
+              };
+            }
           ];
           specialArgs = {
             inherit pkgs-stable;
