@@ -7,6 +7,9 @@
   networking.networkmanager.enable = true;
 
   system.zenKernel.enable = true;
+
+  system.bluetooth.enable = true;
+
   system.plasma.enable = true;
 
   system.firewalld.enable = true;
