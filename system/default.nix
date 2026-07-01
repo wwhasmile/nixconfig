@@ -10,5 +10,5 @@ let
     builtins.attrNames |>
     map (x: (toString ./.) + "/${x}");
 in {
-    inherit imports;
-  }
+  inherit imports;
+}
