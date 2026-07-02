@@ -42,6 +42,8 @@
 
     networking.networkmanager.enable = true;
 
+    programs.nano.enable = lib.mkForce false;
+
     nix.settings.experimental-features = [ "nix-command" "flakes" "pipe-operators" ];
   };
 }
