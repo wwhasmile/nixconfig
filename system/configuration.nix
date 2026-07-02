@@ -4,6 +4,7 @@
   config = {
     environment.systemPackages = with pkgs; [ git ];
 
+    services.timesyncd.enable = true;
     i18n.extraLocaleSettings = with config; {
       LC_ADDRESS = i18n.defaultLocale;
       LC_IDENTIFICATION = i18n.defaultLocale;
