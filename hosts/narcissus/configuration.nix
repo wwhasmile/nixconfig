@@ -19,6 +19,8 @@
   system.gpg.enable = true;
   system.sshd.enable = false;
 
+  system.gaming.enable = true;
+
   system.docker.enable = true;
 
   services.libinput.enable = true;
