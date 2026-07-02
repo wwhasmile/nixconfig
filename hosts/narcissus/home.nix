@@ -1,6 +1,9 @@
 { config, pkgs, ... }:
 
 {
+  homeSettings.name = "wwhasmile";
+  homeSettings.email = "uwuhasmile@proton.me";
+
   homeSettings.browser.enable = true;
   homeSettings.git.enable = true;
 

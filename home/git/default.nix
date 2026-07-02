@@ -19,6 +19,10 @@ in {
 
     programs.git = {
       enable = true;
+
+      userName = config.homeSettings.name;
+      userEmail = config.homeSettings.email;
+
       lfs.enable = true;
       extraConfig.init.defaultBranch = "main";
     };
