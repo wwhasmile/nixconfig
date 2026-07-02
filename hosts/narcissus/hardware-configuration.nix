@@ -28,6 +28,23 @@
     [ { device = "/dev/disk/by-uuid/bdb3f150-ee56-4ed1-8f13-056ea4fef703"; }
     ];
 
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+    extraPackages = with pkgs; [
+      intel-media-driver
+      intel-compute-runtime
+      libvdpau-va-gl
+    ];
+    extraPackages32 = with pkgs.driversi686Linux; [
+      intel-media-driver
+      libvdpau-va-gl
+    ];
+  };
+  environment.sessionVariables = {
+    LIBVA_DRIVER_NAME = "iHD";
+  };
+
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
