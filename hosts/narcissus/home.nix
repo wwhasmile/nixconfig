@@ -1,9 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  home.username = "wwhasmile";
-  home.homeDirectory = "/home/wwhasmile";
-
+  homeSettings.browser.enable = true;
 
   # The home.packages option allows you to install Nix packages into your
   # environment.

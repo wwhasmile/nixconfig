@@ -27,13 +27,7 @@
       gaming.enable = true;
     };
 
-    users.users.wwhasmile = {
-      description = "Hasmile";
-      packages = with pkgs; [
-        librewolf
-        tree
-      ];
-    };
+    users.users.wwhasmile.description = "Hasmile";
 
     time.timeZone = "Europe/Kyiv";
     i18n.defaultLocale = "uk_UA.UTF-8";
