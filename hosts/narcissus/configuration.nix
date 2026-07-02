@@ -1,40 +1,49 @@
 { config, lib, pkgs, ... }:
 
 {
-  system.users = [ "wwhasmile" ];
-  system.admins = [ "wwhasmile" ];
+  config = {
+    system = {
+      users = [ "wwhasmile" ];
+      admins = [ "wwhasmile" ];
 
-  system.region = {
-    timezone = "Europe/Kyiv";
-    language = "uk_UA.UTF-8";
+      region = {
+        timezone = "Europe/Kyiv";
+        language = "uk_UA.UTF-8";
+      };
+
+      # It's a system used as a desktop.
+      zenKernel.enable = true;
+
+      # But also it's a laptop :)
+      bluetooth.enable = true;
+
+      # So far it's Plasma, later gonna replace with MangoWM.
+      plasma.enable = true;
+
+      # Security
+      firewalld.enable = true;
+      gpg.enable = true;
+      sshd.enable = false;
+
+      # idk yet
+      docker.enable = false;
+
+      # Obviously I will game here some.
+      gaming.enable = true;
+    };
+
+    users.users.wwhasmile = {
+      description = "Hasmile";
+      packages = with pkgs; [
+        librewolf
+        tree
+      ];
+    };
+
+    # I need to have a proper layout.
+    services.xserver.xkb.layout = "us,ua";
+
+    system.stateVersion = "26.05";
   };
-
-  system.zenKernel.enable = true;
-
-  system.bluetooth.enable = true;
-
-  system.plasma.enable = true;
-
-  system.firewalld.enable = true;
-  system.gpg.enable = true;
-  system.sshd.enable = false;
-
-  system.gaming.enable = true;
-
-  system.docker.enable = true;
-
-  services.libinput.enable = true;
-  users.users.wwhasmile = {
-    description = "Hasmile";
-    packages = with pkgs; [
-      librewolf 
-      tree
-    ];
-  };
-
-  services.xserver.xkb.layout = "us,ua";
-
-  system.stateVersion = "26.05"; # Did you read the comment?
-
 }
 
