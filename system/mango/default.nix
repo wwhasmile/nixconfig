@@ -14,6 +14,7 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
+    services.xserver.enable = true;
     programs.mango.enable = true;
     services.displayManager.sddm = {
       enable = true;

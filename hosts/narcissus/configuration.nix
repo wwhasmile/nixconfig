@@ -13,7 +13,7 @@
 
   system.bluetooth.enable = true;
 
-  system.plasma.enable = true;
+  system.mango.enable = true;
 
   system.firewalld.enable = true;
   system.gpg.enable = true;
