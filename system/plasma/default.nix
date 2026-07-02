@@ -10,6 +10,7 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
+    services.xserver.enable = true;
     services.desktopManager.plasma6.enable = true;
     services.displayManager.plasma-login-manager.enable = true;
 
