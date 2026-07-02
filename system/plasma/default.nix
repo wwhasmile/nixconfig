@@ -10,9 +10,13 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
-    services.xserver.enable = true;
     services.desktopManager.plasma6.enable = true;
     services.displayManager.plasma-login-manager.enable = true;
+
+    services.xserver = {
+      enable = true;
+      xkb.options = "grp:alt_shift_toggle";
+    };
 
     # Audio
     security.rtkit.enable = true;

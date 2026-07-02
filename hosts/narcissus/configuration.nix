@@ -13,7 +13,7 @@
 
   system.bluetooth.enable = true;
 
-  system.mango.enable = true;
+  system.plasma.enable = true;
 
   system.firewalld.enable = true;
   system.gpg.enable = true;
@@ -29,6 +29,8 @@
       tree
     ];
   };
+
+  services.xserver.xkb.layout = "us,ua";
 
   system.stateVersion = "26.05"; # Did you read the comment?
 
