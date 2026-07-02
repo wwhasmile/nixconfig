@@ -16,6 +16,7 @@ in {
     services.xserver = {
       enable = true;
       xkb.options = "grp:alt_shift_toggle";
+      excludePackages = with pkgs; [ xterm ];
     };
 
     # Audio
