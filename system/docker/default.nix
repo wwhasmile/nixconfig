@@ -1,10 +1,10 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.system.docker;
+  cfg = config.systemSettings.docker;
 in {
   options = {
-    system.docker = {
+    systemSettings.docker = {
       enable = lib.mkEnableOption "Enable Docker";
     };
   };

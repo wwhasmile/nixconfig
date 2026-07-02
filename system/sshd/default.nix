@@ -1,10 +1,10 @@
 { config, lib, ... }:
 
 let
-  cfg = config.system.sshd;
+  cfg = config.systemSettings.sshd;
 in {
   options = {
-    system.sshd = {
+    systemSettings.sshd = {
       enable = lib.mkEnableOption "Enable remote SSH access";
     };
   };

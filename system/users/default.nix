@@ -2,7 +2,7 @@
 
 {
   options = {
-    system = {
+    systemSettings = {
       users = lib.mkOption {
         type = lib.types.listOf lib.types.str;
         description = "List of desktop users of this machine";
@@ -15,12 +15,12 @@
   };
 
   config = {
-    users.users = lib.genAttrs config.system.users (user: {
+    users.users = lib.genAttrs config.systemSettings.users (user: {
       isNormalUser = true;
-      extraGroups = [ "networkmanager" "video" "render" ] ++ (if builtins.elem user config.system.admins then [ "wheel" ] else [ ]);
+      extraGroups = [ "networkmanager" "video" "render" ] ++ (if builtins.elem user config.systemSettings.admins then [ "wheel" ] else [ ]);
     });
 
-    home-manager.users = lib.genAttrs config.system.users (user: {
+    home-manager.users = lib.genAttrs config.systemSettings.users (user: {
       home.username = user;
       home.homeDirectory = "/home/${user}";
     });

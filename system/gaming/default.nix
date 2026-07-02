@@ -1,10 +1,10 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.system.gaming;
+  cfg = config.systemSettings.gaming;
 in {
   options = {
-    system.gaming = {
+    systemSettings.gaming = {
       enable = lib.mkEnableOption "Enable gaming";
     };
   };

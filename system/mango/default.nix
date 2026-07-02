@@ -1,14 +1,14 @@
 { inputs, config, lib, pkgs, ... }:
 
 let
-  cfg = config.system.mango;
+  cfg = config.systemSettings.mango;
 in {
   imports = [
     inputs.mangowm.nixosModules.mango
   ];
 
   options = {
-    system.mango = {
+    systemSettings.mango = {
       enable = lib.mkEnableOption "Enable MangoWM";
     };
   };

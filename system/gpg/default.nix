@@ -1,10 +1,10 @@
 { lib, config, ... }:
 
 let
-  cfg = config.system.gpg;
+  cfg = config.systemSettings.gpg;
 in {
   options = {
-    system.gpg = {
+    systemSettings.gpg = {
       enable = lib.mkEnableOption "Enable GPG";
     };
   };

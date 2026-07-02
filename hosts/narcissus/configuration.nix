@@ -2,7 +2,7 @@
 
 {
   config = {
-    system = {
+    systemSettings = {
       users = [ "wwhasmile" ];
       admins = [ "wwhasmile" ];
 

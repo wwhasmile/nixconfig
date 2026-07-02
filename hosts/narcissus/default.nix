@@ -7,7 +7,7 @@
   ];
 
   config = {
-    home-manager.users = lib.genAttrs config.system.users (user: {
+    home-manager.users = lib.genAttrs config.systemSettings.users (user: {
       imports = [
         ./home.nix
         ../../home

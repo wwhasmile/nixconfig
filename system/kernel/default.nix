@@ -1,10 +1,10 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.system.zenKernel;
+  cfg = config.systemSettings.zenKernel;
 in {
   options = {
-    system.zenKernel = {
+    systemSettings.zenKernel = {
       enable = lib.mkEnableOption "Enable zen kernel";
     };
   };

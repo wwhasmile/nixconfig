@@ -20,11 +20,15 @@ in {
     programs.git = {
       enable = true;
 
-      userName = config.homeSettings.name;
-      userEmail = config.homeSettings.email;
+      settings = {
+        user = {
+          name = config.homeSettings.name;
+          email = config.homeSettings.email;
+        };
+        init.defaultBranch = "main";
+      };
 
       lfs.enable = true;
-      extraConfig.init.defaultBranch = "main";
     };
   };
 }

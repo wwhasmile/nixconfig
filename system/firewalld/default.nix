@@ -1,10 +1,10 @@
 { config, lib, ... }:
 
 let
-  cfg = config.system.firewalld;
+  cfg = config.systemSettings.firewalld;
 in {
   options = {
-    system.firewalld = {
+    systemSettings.firewalld = {
       enable = lib.mkEnableOption "Enable firewall";
       tcpPorts = lib.mkOption {
         type = lib.types.listOf lib.types.int;

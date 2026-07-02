@@ -1,10 +1,10 @@
 { config, lib, ... }:
 
 let
-  cfg = config.system.bluetooth;
+  cfg = config.systemSettings.bluetooth;
 in {
   options = {
-    system.bluetooth = {
+    systemSettings.bluetooth = {
       enable = lib.mkEnableOption "Enable Bluetooth";
     };
   };
