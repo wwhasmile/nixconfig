@@ -38,6 +38,7 @@
       nixosConfigurations = lib.genAttrs hosts (host:
         lib.nixosSystem {
           inherit system;
+          inherit pkgs;
 
           modules = [
             { networking.hostName = host; }
