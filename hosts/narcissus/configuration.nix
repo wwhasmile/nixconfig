@@ -6,11 +6,6 @@
       users = [ "wwhasmile" ];
       admins = [ "wwhasmile" ];
 
-      region = {
-        timezone = "Europe/Kyiv";
-        language = "uk_UA.UTF-8";
-      };
-
       # It's a system used as a desktop.
       zenKernel.enable = true;
 
@@ -40,6 +35,8 @@
       ];
     };
 
+    time.timeZone = "Europe/Kyiv";
+    i18n.defaultLocale = "uk_UA.UTF-8";
     # I need to have a proper layout.
     services.xserver.xkb.layout = "us,ua";
 
