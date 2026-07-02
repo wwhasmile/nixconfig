@@ -14,11 +14,15 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
-    services.xserver.enable = true;
     programs.mango.enable = true;
     services.displayManager.sddm = {
       enable = true;
       wayland.enable = true;
+    };
+
+    services.xserver = {
+      enable = true;
+      xkb.options = "grp:alt_shift_toggle";
     };
 
     # Audio
