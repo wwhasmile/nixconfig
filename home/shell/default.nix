@@ -17,11 +17,11 @@ in {
       autosuggestion.enable = true;
 
       shellAliases = {
-        neofetch = "disfetch";
+        neofetch = "fastfetch";
       };
 
       initContent = ''
-        disfetch
+        fastfetch
       '';
 
       plugins = [
@@ -61,7 +61,7 @@ in {
     };
 
     home.packages = with pkgs; [
-      disfetch
+      fastfetch
       gnugrep
       gnused
     ];
