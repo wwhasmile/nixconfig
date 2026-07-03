@@ -10,6 +10,8 @@
 
     # But also it's a laptop :)
     bluetooth.enable = true;
+    # And I draw.
+    drawing.enable = true;
 
     # So far it's Plasma, later gonna replace with MangoWM.
     plasma.enable = true;

@@ -10,6 +10,8 @@
     browser.enable = true;
     chat.enable = true;
 
+    art.enable = true;
+
     git.enable = true;
   };
 
