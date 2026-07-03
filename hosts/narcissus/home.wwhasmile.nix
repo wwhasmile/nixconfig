@@ -13,6 +13,10 @@
 
     art.enable = true;
 
+    gaming.steam = true;
+    gaming.itch = true;
+    gaming.dosbox = true;
+
     git.enable = true;
   };
 
