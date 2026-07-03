@@ -62,8 +62,13 @@ in {
 
     home.packages = with pkgs; [
       fastfetch
+      curl
+      wget
       gnugrep
       gnused
+      unzip
+      zip
+      xz
     ];
   };
 }
