@@ -7,6 +7,7 @@
 
     shell.enable = true;
 
+    keyguard.enable = true;
     browser.enable = true;
     chat.enable = true;
 
