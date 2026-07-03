@@ -18,7 +18,6 @@ in {
       defaultPref("network.http.referer.XOriginPolicy", 2);
       defaultPref("librewolf.webgl.prompt", true);
       defaultPref("browser.sessionstore.resume_from_crash", false);
-      defaultPref("browser.tabs.vertical", true);
     '';
   };
 }
