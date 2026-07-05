@@ -26,6 +26,8 @@
 
     # Obviously I will game here some.
     gaming.enable = true;
+
+    stylix.enable = true;
   };
 
   users.users.wwhasmile.description = "Hasmile";

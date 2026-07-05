@@ -27,5 +27,7 @@ in {
 
       mutableExtensionsDir = false;
     };
+
+    stylix.targets.vscodium.enable = true;
   };
 }
