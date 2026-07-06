@@ -1,13 +1,12 @@
-{ config, lib, pkgs, inputs, ... }:
+{ config, lib, pkgs, osConfig, ... }:
 
 let
-  cfg = config.systemSettings.stylix;
-  theme = import ../../themes/${config.systemSettings.stylix.theme} pkgs;
+  cfg = config.homeSettings.stylix;
+  systemCfg = osConfig.systemSettings.stylix;
+  theme = import ../../themes/${config.homeSettings.stylix.theme} pkgs;
 in {
-  imports = [ inputs.stylix.nixosModules.stylix ];
-
   options = {
-    systemSettings.stylix = {
+    homeSettings.stylix = {
       enable = lib.mkEnableOption "Enable system wise Stylix theming";
       theme = lib.mkOption {
         type = lib.types.enum (builtins.readDir ../../themes
@@ -15,7 +14,7 @@ in {
           |> builtins.attrNames
         );
         description = "System wise theme";
-        default = "github-dark";
+        default = if systemCfg.enable then systemCfg.theme else "github-dark";
       };
     };
   };
@@ -49,11 +48,34 @@ in {
           name = "Twitter Color Emoji";
           package = pkgs.twitter-color-emoji;
         };
+
+        sizes = {
+          terminal = 19;
+          applications = 12;
+          popups = 12;
+          desktop = 12;
+        };
       };
 
       targets = {
-        console.enable = true;
-        chromium.enable = true;
+        kde.enable = true;
+        qt.enable = true;
+        gtk.enable = true;
+      };
+    };
+    
+    home.packages = with pkgs; [
+      nerd-fonts.terminess-ttf
+      ubuntu-sans 
+      twitter-color-emoji
+    ];
+
+    fonts.fontconfig = {
+      enable = true;
+      defaultFonts = {
+        monospace = [ config.stylix.fonts.monospace.name ];
+        sansSerif = [ config.stylix.fonts.sansSerif.name ];
+        serif = [ config.stylix.fonts.serif.name ];
       };
     };
   };
