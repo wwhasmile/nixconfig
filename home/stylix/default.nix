@@ -50,7 +50,7 @@ in {
         };
 
         sizes = {
-          terminal = 19;
+          terminal = 13;
           applications = 12;
           popups = 12;
           desktop = 12;
@@ -65,6 +65,8 @@ in {
     };
     
     home.packages = with pkgs; [
+      kdePackages.breeze
+      kdePackages.breeze-icons
       nerd-fonts.terminess-ttf
       ubuntu-sans 
       twitter-color-emoji
