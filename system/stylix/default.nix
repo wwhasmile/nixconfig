@@ -31,7 +31,7 @@ in {
 
       fonts = {
         monospace = {
-          name = "Terminess Nerd Font Mono";
+          name = "Terminess Nerd Font";
           package = pkgs.nerd-fonts.terminess-ttf;
         };
 
