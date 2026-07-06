@@ -5,6 +5,9 @@
     users = [ "wwhasmile" ];
     admins = [ "wwhasmile" ];
 
+    # Need to manage power since it's a laptop.
+    tlp.enable = true;
+
     # It's a system used as a desktop.
     zenKernel.enable = true;
 
@@ -39,4 +42,3 @@
 
   system.stateVersion = "26.05";
 }
-
