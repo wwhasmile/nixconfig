@@ -7,6 +7,7 @@
 
     shell.enable = true;
     fastfetch.enable = true;
+    alacritty.enable = true;
 
     keyguard.enable = true;
     browser.enable = true;
