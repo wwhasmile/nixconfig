@@ -50,7 +50,7 @@ in {
         };
 
         sizes = {
-          terminal = 13;
+          terminal = 15;
           applications = 12;
           popups = 12;
           desktop = 12;

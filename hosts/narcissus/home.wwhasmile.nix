@@ -6,6 +6,7 @@
     email = "uwuhasmile@proton.me";
 
     shell.enable = true;
+    fastfetch.enable = true;
 
     keyguard.enable = true;
     browser.enable = true;
@@ -22,6 +23,7 @@
     git.enable = true;
 
     stylix.enable = true;
+    plasma.enable = true;
   };
 
   programs.vscodium.profiles.default.extensions = with pkgs.vscode-extensions; [

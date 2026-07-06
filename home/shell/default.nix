@@ -3,6 +3,10 @@
 let
   cfg = config.homeSettings.shell;
 in {
+  imports = [
+    ./fastfetch.nix
+  ];
+
   options = {
     homeSettings.shell = {
       enable = lib.mkEnableOption "Enable fancy shell";
@@ -19,10 +23,6 @@ in {
       shellAliases = {
         neofetch = "fastfetch";
       };
-
-      initContent = ''
-        fastfetch
-      '';
 
       plugins = [
         {
@@ -61,7 +61,6 @@ in {
     };
 
     home.packages = with pkgs; [
-      fastfetch
       curl
       wget
       gnugrep
