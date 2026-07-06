@@ -12,6 +12,8 @@
     browser.enable = true;
     chat.enable = true;
 
+    media.enable = true;
+
     art.enable = true;
 
     vscodium.enable = true;
