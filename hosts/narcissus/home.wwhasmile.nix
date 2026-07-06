@@ -13,6 +13,7 @@
     chat.enable = true;
 
     media.enable = true;
+    recording.enable = true;
 
     art.enable = true;
 
