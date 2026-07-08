@@ -14,18 +14,18 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/24022f7c-0471-43c0-8922-1e253cc4223d";
+    { device = "/dev/disk/by-label/NixOS";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/6C55-962B";
+    { device = "/dev/disk/by-label/EFI";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/bdb3f150-ee56-4ed1-8f13-056ea4fef703"; }
+    [ { device = "/dev/disk/by-label/SWAP"; }
     ];
 
   hardware.graphics = {
