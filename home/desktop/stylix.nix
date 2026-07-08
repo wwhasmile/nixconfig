@@ -65,8 +65,6 @@ in {
     };
     
     home.packages = with pkgs; [
-      kdePackages.breeze
-      kdePackages.breeze-icons
       nerd-fonts.terminess-ttf
       ubuntu-sans 
       twitter-color-emoji
