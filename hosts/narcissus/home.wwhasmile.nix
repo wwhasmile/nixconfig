@@ -26,6 +26,7 @@
     git.enable = true;
 
     stylix.enable = true;
+    gnome.enable = true;
   };
 
   programs.vscodium.profiles.default.extensions = with pkgs.vscode-extensions; [
