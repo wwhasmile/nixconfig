@@ -14,7 +14,11 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
-    programs.mango.enable = true;
+    programs = {
+      mango.enable = true;
+      dconf.enable = true;
+    };
+
     services.displayManager.sddm = {
       enable = true;
       wayland.enable = true;

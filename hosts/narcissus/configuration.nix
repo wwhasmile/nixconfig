@@ -16,8 +16,7 @@
     # And I draw.
     drawing.enable = true;
 
-    # So far it's Plasma, later gonna replace with MangoWM.
-    plasma.enable = true;
+    mango.enable = true;
 
     # Security
     firewalld.enable = true;
