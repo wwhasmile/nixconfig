@@ -26,7 +26,6 @@
     git.enable = true;
 
     stylix.enable = true;
-    mango.enable = true;
   };
 
   programs.vscodium.profiles.default.extensions = with pkgs.vscode-extensions; [

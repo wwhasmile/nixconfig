@@ -16,7 +16,7 @@
     # And I draw.
     drawing.enable = true;
 
-    mango.enable = true;
+    gnome.enable = true;
 
     # Security
     firewalld.enable = true;
