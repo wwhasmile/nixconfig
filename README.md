@@ -36,4 +36,4 @@ System and home modules don't need to be manually imported, as any `.nix` file i
 
 * [`librephoenix/nixos-config`](https://github.com/librephoenix/nixos-config) - the main source of inspiration for my config before restructurization.
 * [Official NixOS Wiki](https://wiki.nixos.org) for a lot of useful information.
-* [`MyNixOS`](https://mynixos.com) for being a great help with packages and various configuration settings.
+* [MyNixOS](https://mynixos.com) for being a great help with packages and various configuration settings.
