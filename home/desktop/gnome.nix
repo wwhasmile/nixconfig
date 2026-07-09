@@ -10,9 +10,11 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
-    gtk.cursorTheme = {
+    home.pointerCursor = {
+      enable = true;
+      gtk.enable = true;
       package = pkgs.bibata-cursors;
-      name = if config.stylix.polarity == "dark" then "Bibata Modern Classic" else "Bibata Modern Ice";
+      name = "Bibata-Modern-Classic";
       size = 24;
     };
 
@@ -28,6 +30,7 @@ in {
       adwaita-icon-theme-legacy
       adwaita-qt
       adwaita-qt6
+      bibata-cursors
     ];
   };
 }
