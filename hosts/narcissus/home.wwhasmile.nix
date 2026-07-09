@@ -8,7 +8,6 @@
     shell.enable = true;
     fastfetch.enable = true;
 
-    keyguard.enable = true;
     browser.enable = true;
     chat.enable = true;
 
