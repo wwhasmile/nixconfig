@@ -28,12 +28,9 @@ in {
       gnome.excludePackages = with pkgs; [ gnome-tour gnome-user-docs ];
       systemPackages = with pkgs; [
         gnome-text-editor
-        gnome-calendar
         gnome-characters
-        gnome-console
         gnome-font-viewer
         nautilus
-        gnome-connections
         loupe
       ];
     };
