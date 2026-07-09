@@ -8,6 +8,7 @@
     shell.enable = true;
     fastfetch.enable = true;
 
+    keepass.enable = true;
     browser.enable = true;
     chat.enable = true;
 
