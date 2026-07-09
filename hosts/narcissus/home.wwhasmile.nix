@@ -35,5 +35,29 @@
     ms-vscode.cmake-tools
   ];
 
+  services.syncthing = {
+    enable = true;
+
+    settings = {
+      devices = {
+        redmi = {
+          addresses = [ "dynamic" ];
+          id = "GULJ7IP-HNJ4FYL-Z2D5LKP-J6ANA2P-WWSYVNO-LSJPFBJ-RY24DD4-GLYOTQZ";
+        };
+      };
+
+      folders = {
+        "Passwords" = {
+          path = "/home/wwhasmile/.keepass";
+          devices = [ "redmi" ];
+        };
+        "SSH" = {
+          path = "/home/wwhasmile/ssh";;;;
+          ignorePerms = false;
+        };
+      };
+    };
+  };
+
   home.stateVersion = "26.05";
 }
