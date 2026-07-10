@@ -2,7 +2,7 @@
 
 *This is declarative configuration for my own systems. Feel free to look around and copy if you want to!*
 
-![GNOME Desktop as in this config](/assets/thumnail.png)
+![GNOME Desktop as in this config](/assets/thumbnail.png)
 
 ---
 
