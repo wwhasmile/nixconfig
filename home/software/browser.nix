@@ -13,11 +13,23 @@ in {
     home.packages = with pkgs; [ librewolf ];
 
     home.file.".librewolf/librewolf.overrides.cfg".text = ''
-      defaultPref("browser.toolbars.bookmarks.visibility","never");
+      defaultPref("sidebar.verticalTabs", true);
+      defaultPref("sidebar.verticalTabs.dragToPinPromo.dismissed", true);
       defaultPref("privacy.resistFingerprinting.letterboxing", true);
       defaultPref("network.http.referer.XOriginPolicy", 2);
       defaultPref("librewolf.webgl.prompt", true);
       defaultPref("browser.sessionstore.resume_from_crash", false);
+      defaultPref("middlemouse.paste", false);
+      defaultPref("general.autoScroll", true);
+      defaultPref("privacy.resistFingerprinting", false);
+      defaultPref("privacy.fingerprintingProtection", true);
+      defaultPref("privacy.fingerprintingProtection.overrides", +AllTargets,-CSSPrefersColorScheme);
+
+      pref("middlemouse.paste", false);
+      pref("general.autoScroll", true);
+      pref("privacy.resistFingerprinting", false);
+      pref("privacy.fingerprintingProtection", true);
+      pref("privacy.fingerprintingProtection.overrides", +AllTargets,-CSSPrefersColorScheme);
     '';
   };
 }
