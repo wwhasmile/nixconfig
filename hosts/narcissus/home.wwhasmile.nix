@@ -52,7 +52,7 @@
           devices = [ "redmi" ];
         };
         "SSH" = {
-          path = "/home/wwhasmile/ssh";;;;
+          path = "/home/wwhasmile/ssh";
           ignorePerms = false;
         };
       };
