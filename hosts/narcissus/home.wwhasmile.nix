@@ -33,6 +33,7 @@
     llvm-vs-code-extensions.lldb-dap
     llvm-vs-code-extensions.vscode-clangd
     ms-vscode.cmake-tools
+    ziglang.vscode-zig
   ];
 
   services.syncthing = {
