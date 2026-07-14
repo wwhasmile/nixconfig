@@ -29,12 +29,17 @@
     gnome.enable = true;
   };
 
-  programs.vscodium.profiles.default.extensions = with pkgs.vscode-extensions; [
-    llvm-vs-code-extensions.lldb-dap
-    llvm-vs-code-extensions.vscode-clangd
-    ms-vscode.cmake-tools
-    ziglang.vscode-zig
-  ];
+  programs.vscodium.profiles.default = {
+    extensions =  with pkgs.vscode-extensions; [
+      llvm-vs-code-extensions.lldb-dap
+      llvm-vs-code-extensions.vscode-clangd
+      ms-vscode.cmake-tools
+      ziglang.vscode-zig
+    ];
+    userSettings = {
+      "zig.zls.enabled" = "on";
+    };
+  };
 
   services.syncthing = {
     enable = true;
