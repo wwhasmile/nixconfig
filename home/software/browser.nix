@@ -12,7 +12,7 @@ in {
   config = lib.mkIf cfg.enable {
     home.packages = with pkgs; [ librewolf ];
 
-    home.file.".librewolf/librewolf.overrides.cfg".text = ''
+    home.file.".config/librewolf/librewolf/librewolf.overrides.cfg".text = ''
       defaultPref("sidebar.verticalTabs", true);
       defaultPref("sidebar.verticalTabs.dragToPinPromo.dismissed", true);
       defaultPref("privacy.resistFingerprinting.letterboxing", true);
