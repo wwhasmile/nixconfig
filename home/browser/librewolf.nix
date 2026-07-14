@@ -1,11 +1,11 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.homeSettings.browser;
+  cfg = config.homeSettings.librewolf;
 in {
   options = {
-    homeSettings.browser = {
-      enable = lib.mkEnableOption "Enable browser";
+    homeSettings.librewolf = {
+      enable = lib.mkEnableOption "Enable Librewolf web browser";
     };
   };
 

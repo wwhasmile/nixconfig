@@ -9,7 +9,7 @@
     fastfetch.enable = true;
 
     keepass.enable = true;
-    browser.enable = true;
+    librewolf.enable = true;
     chat.enable = true;
 
     media.enable = true;
