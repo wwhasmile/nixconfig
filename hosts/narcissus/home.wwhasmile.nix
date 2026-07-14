@@ -46,6 +46,10 @@
 
     settings = {
       devices = {
+        nostromo = {
+          addresses = [ "dynamic" ];
+          id = "CA24JZA-OA5SSVM-CKBNFBQ-ZZC3DCF-DDLIEBX-WK5AUBD-VKSGWQQ-KH5SUQR";
+        };
         redmi = {
           addresses = [ "dynamic" ];
           id = "GULJ7IP-HNJ4FYL-Z2D5LKP-J6ANA2P-WWSYVNO-LSJPFBJ-RY24DD4-GLYOTQZ";
@@ -55,10 +59,11 @@
       folders = {
         "Passwords" = {
           path = "/home/wwhasmile/.keepass";
-          devices = [ "redmi" ];
+          devices = [ "nostromo" "redmi" ];
         };
         "SSH" = {
-          path = "/home/wwhasmile/ssh";
+          path = "/home/wwhasmile/.ssh";
+          devices = [ "nostromo" ];
           ignorePerms = false;
         };
       };
