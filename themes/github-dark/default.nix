@@ -1,5 +1,3 @@
-pkgs:
-
 {
   scheme = {
     base00 = "#0d1117";

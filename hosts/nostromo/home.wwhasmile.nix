@@ -26,7 +26,10 @@
 
     git.enable = true;
 
-    stylix.enable = true;
+    stylix = {
+      enable = true;
+      theme = "gruvbox-dark";
+    };
     gnome.enable = true;
   };
 

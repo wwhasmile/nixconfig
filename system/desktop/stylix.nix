@@ -2,7 +2,7 @@
 
 let
   cfg = config.systemSettings.stylix;
-  theme = import ../../themes/${config.systemSettings.stylix.theme} pkgs;
+  theme = import ../../themes/${config.systemSettings.stylix.theme};
 in {
   imports = [ inputs.stylix.nixosModules.stylix ];
 

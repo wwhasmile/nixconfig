@@ -3,7 +3,7 @@
 let
   cfg = config.homeSettings.stylix;
   systemCfg = osConfig.systemSettings.stylix;
-  theme = import ../../themes/${config.homeSettings.stylix.theme} pkgs;
+  theme = import ../../themes/${config.homeSettings.stylix.theme};
 in {
   options = {
     homeSettings.stylix = {
