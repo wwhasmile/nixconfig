@@ -1,0 +1,18 @@
+{ config, lib, ... }:
+
+{
+  imports = [
+    ./configuration.nix
+    ./hardware-configuration.nix
+  ];
+
+  config = {
+    home-manager.users = lib.genAttrs config.systemSettings.users (user: {
+      imports = [
+        ./home.${user}.nix
+        ../../home
+      ];
+    });
+  };
+}
+
