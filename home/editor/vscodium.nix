@@ -19,9 +19,20 @@ in {
           yzhang.markdown-all-in-one
           gruntfuggly.todo-tree
           jnoortheen.nix-ide
+          llvm-vs-code-extensions.vscode-clangd
+          ms-vscode.cmake-tools
+          ziglang.vscode-zig
+        ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+          {
+            name = "debug";
+            publisher = "webfreak";
+            version = "0.27.0";
+            sha256 = "sha256-p/k5UcXldXKFKbPbnW603Jsut53n01azeDhWMDSd4nw="; 
+          }
         ];
         userSettings = {
           "editor.rulers" = [ 120 ];
+          "zig.zls.enabled" = "on";
         };
       };
 
