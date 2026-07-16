@@ -15,6 +15,7 @@ in {
 
       profiles.default = {
         extensions = with pkgs.vscode-extensions; [
+          mkhl.direnv
           vscodevim.vim
           yzhang.markdown-all-in-one
           gruntfuggly.todo-tree
