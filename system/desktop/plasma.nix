@@ -28,5 +28,10 @@ in {
       pulse.enable = true;
       jack.enable = true;
     };
+
+    environment.systemPackages = with pkgs; [
+      alsa-utils
+    ];
+    hardware.alsa.enablePersistence = true;
   };
 }

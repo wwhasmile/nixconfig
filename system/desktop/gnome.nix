@@ -32,7 +32,10 @@ in {
         gnome-font-viewer
         nautilus
         loupe
+
+        alsa-utils
       ];
     };
+    hardware.alsa.enablePersistence = true;
   };
 }
