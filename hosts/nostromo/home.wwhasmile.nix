@@ -18,6 +18,7 @@
     art.enable = true;
 
     vscodium.enable = true;
+    zed.enable = true;
 
     gaming.steam = true;
     gaming.minecraft = true;

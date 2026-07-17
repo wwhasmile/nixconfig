@@ -24,7 +24,7 @@ in {
       enable = true;
       autoEnable = false;
 
-      base16Scheme = theme.scheme;
+      base16Scheme = theme.scheme // { variant = theme.polarity; };
       polarity = theme.polarity;
       image = pkgs.fetchurl theme.background;
 
