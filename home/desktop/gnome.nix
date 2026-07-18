@@ -22,7 +22,7 @@ in {
       enable = true;
       iconTheme = {
         name = "Mint-Y";
-        package = pkgs.papirus-icon-theme;
+        package = pkgs.mint-y-icons;
       };
     };
 
@@ -34,7 +34,6 @@ in {
     home.packages = with pkgs; [
       gnome-themes-extra
       libadwaita
-      mint-y-icons
       adwaita-icon-theme
       adwaita-icon-theme-legacy
       adwaita-qt
