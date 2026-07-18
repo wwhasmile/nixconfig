@@ -17,7 +17,7 @@ The config uses flakes setup with [`home-manager`](https://github.com/nix-commun
 | DE | [`GNOME`](https://www.gnome.org/uk/), [`KDE Plasma`](https://kde.org/uk/plasma-desktop/) |
 | Fetcher | [`fastfetch`](https://github.com/fastfetch-cli/fastfetch) |
 | Terminal | [`Alacritty`](https://alacritty.org/) |
-| Editor | [`VSCodium`](https://vscodium.com/) |
+| Editor | [`Zed`](https://zed.dev/) |
 | Media player | [`VLC`](https://www.videolan.org/vlc/index.html) |
 | Web browser | [`Librewolf`](https://librewolf.net/) |
 
