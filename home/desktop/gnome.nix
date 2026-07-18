@@ -18,6 +18,14 @@ in {
       size = 24;
     };
 
+    gtk = {
+      enable = true;
+      iconTheme = {
+        name = "Mint-Y";
+        package = pkgs.papirus-icon-theme;
+      };
+    };
+
     stylix.targets = {
       gtk.enable = lib.mkForce true;
       gnome.enable = true;
@@ -26,6 +34,7 @@ in {
     home.packages = with pkgs; [
       gnome-themes-extra
       libadwaita
+      mint-y-icons
       adwaita-icon-theme
       adwaita-icon-theme-legacy
       adwaita-qt
