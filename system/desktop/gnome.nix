@@ -32,6 +32,7 @@ in {
         gnome-font-viewer
         nautilus
         loupe
+        wl-clipboard
 
         alsa-utils
       ];

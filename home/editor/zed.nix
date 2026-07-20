@@ -16,7 +16,7 @@ in {
 
     programs.zed-editor = {
       enable = true;
-      
+
       extensions = [ "nix" "toml" "make" "csharp" ];
 
       userSettings = {
@@ -40,12 +40,15 @@ in {
         agent.button = false;
         assistant.enable = false;
 
-        git_panel.button = false;
+        git_panel.button = true;
+        collaboration_panel.buttom = false;
+        chat_panel.button = false;
 
         bottom_dock_layout = "contained";
 
         load_direnv = "shell_hook";
         vim_mode = true;
+        vim.use_system_clipboard = "on_yank";
       };
     };
 
