@@ -17,13 +17,27 @@ in {
     programs.zed-editor = {
       enable = true;
 
-      extensions = [ "nix" "toml" "make" "csharp" ];
+      extensions = [
+        "nix"
+        "toml"
+        "make"
+        "csharp"
+        "editorconfig"
+        "git-firefly"
+        "catppuccin-icons"
+      ];
 
       userSettings = {
         cursor_blink = false;
 
         session.restore_unsaved_buffers = false;
         restore_on_startup = "empty_tab";
+
+        icon_theme = {
+          mode = "system";
+          light = "Catppuccin Mocha";
+          dark = "Catppuccin Mocha";
+        };
 
         toolbar = {
           code_actions = true;
