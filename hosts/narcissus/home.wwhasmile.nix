@@ -29,6 +29,10 @@
     gnome.enable = true;
   };
 
+  home.packages = with pkgs; [
+    ghidra
+  ];
+
   services.syncthing = {
     enable = true;
 
