@@ -38,6 +38,10 @@
           addresses = [ "dynamic" ];
           id = "CA24JZA-OA5SSVM-CKBNFBQ-ZZC3DCF-DDLIEBX-WK5AUBD-VKSGWQQ-KH5SUQR";
         };
+        winostromo = {
+          addresses = [ "dynamic" ];
+          id = "4JDNN3T-OWDYEGA-XTLQOYU-EFGVAIN-EJZBAVN-MENYB7I-VZTXXEH-23PGLAG";
+        };
         redmi = {
           addresses = [ "dynamic" ];
           id = "GULJ7IP-HNJ4FYL-Z2D5LKP-J6ANA2P-WWSYVNO-LSJPFBJ-RY24DD4-GLYOTQZ";
@@ -47,11 +51,11 @@
       folders = {
         "Passwords" = {
           path = "/home/wwhasmile/.keepass";
-          devices = [ "nostromo" "redmi" ];
+          devices = [ "nostromo" "winostromo" "redmi" ];
         };
         "SSH" = {
           path = "/home/wwhasmile/.ssh";
-          devices = [ "nostromo" ];
+          devices = [ "nostromo" "winostromo" ];
           ignorePerms = false;
         };
       };
