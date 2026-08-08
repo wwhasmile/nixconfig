@@ -22,6 +22,7 @@ in {
         "toml"
         "make"
         "csharp"
+        "haxe"
         "editorconfig"
         "git-firefly"
         "catppuccin-icons"
@@ -51,12 +52,9 @@ in {
         };
 
         disable_ai = true;
-        agent.button = false;
-        assistant.enable = false;
 
         git_panel.button = true;
-        collaboration_panel.buttom = false;
-        chat_panel.button = false;
+        collaboration_panel.button = false;
 
         bottom_dock_layout = "contained";
 
