@@ -15,7 +15,6 @@ in {
       profiles.default = {
         extensions = with pkgs.vscode-extensions; [
           jnoortheen.nix-ide
-          vscodevim.vim
           mkhl.direnv
           yzhang.markdown-all-in-one
           llvm-vs-code-extensions.vscode-clangd
@@ -45,6 +44,10 @@ in {
             hash = "sha256-nuEPGPFOp4zkAwR18/yibIzN1dlBj23X7n+Cnskaacc=";
           }
         ];
+
+        userSettings = {
+          "hldebug.connectionTimeout" = 10;
+        };
       };
     };
 
